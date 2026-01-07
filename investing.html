@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Calculator</title>
+    <link rel="stylesheet" href="investing-style.css">
+</head>
+<body>
+    <h1>Investment Calculator</h1>
+    <br>
+    <div id="investing-calculator">
+        <p>Starting Amount</p><input type="text" id="amount">
+        <br>
+        <p>After</p> <input type="text" id="years"> <br>
+        <p>Return Rate</p> <input type="text" id="rate"> <br>
+        <p>Compound</p> <select id="compound">
+            <option value="annually" selected>Annually</option>
+            <option value="monthly">Monthly</option>
+            <option value="daily">Daily</option>
+        </select> <br>
+        <p>Additional Contribution</p> <input type="text" id="additional-contribution"> <br>
+        Contribute At The <input type="radio" value="beginning" name="contribute"><p>Beginning</p> <input type="radio" value="end" name="contribute"> <p>End</p><br>
+        <p>Of Each</p> <input type="radio" name="each"> <p>Month</p> <input type="radio" name="each"> <p>Year</p>
+        <br><input type="submit" id="button" onclick="window.location.href='about.html';"> <div id="submit">Submit &#10148;</div> 
+    </div>
+    <div id="result"></div>
+    <details>
+        <div id="history"></div>
+        <summary>History</summary>
+        <script>
+            let history = sessionStorage.getItem("previous")
+            if(history){
+                document.querySelector("#history").innerHTML = history;
+            }
+        </script>
+        </div>
+    </details>
+    <script src="investing-script.js"></script>
+</body>
+</html>

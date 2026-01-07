@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(savings-background.jpg);
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    position : relative;
+}
+#h2-1{
+    position: absolute;
+    left: 350px;
+    top: 100px;
+    color: white;
+    z-index: 999;
+}
+#add-new-goal{
+    position: absolute;
+    top: 150px;
+    left: 350px;
+}
+#h2-2{
+    position: absolute;
+    top: 400px;
+    left: 350px;
+}
+#goals-names{
+    position: absolute;
+    top: 450px;
+    left: 350px;
+}
+
+
+.goal-card{
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width: 600px;
+}
+
+.goal-card > div{
+    margin-bottom: 6px;
+}
+
+.progress-bar{
+    height: 10px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    overflow: hidden;
+}
+.progress-bar .fill{
+    height: 100%;
+    width: 0%;
+    transition: width 300ms ease;
+    background: rgba(255, 255, 255, 0.9);
+}

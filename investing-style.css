@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#investing-calculator{
+    margin-top: 30px;
+    margin-left: 500px;
+}
+h1{
+    margin-top: 150px;
+    margin-left: 500px;
+}
+body{
+    background-image: url(investing-background.jpg);
+    background-size: cover;
+}
+
+p{
+    display: inline-block;
+}
+
+#amount{
+    margin-left: 35px;
+}
+#submit{
+    height: 30px;
+    width: 80px;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#submit:hover {
+    background-color: #444;
+}
+
+#button{
+    display: none;
+}
+
+input[type="text"] {
+width: 60px;
+box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.9);
+}
+p{
+    padding-bottom: 5px;
+}
+#additional-contribution{
+    margin-left: 25px;
+}
+#compound{
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.9);
+margin-left: 105px;
+}
+#rate{
+    margin-left: 100px;
+}
+#years{
+    margin-left: 143px;
+}
+#amount {
+    margin-left: 75px;
+}
+
+#result{
+    display: none;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+details{
+    margin-left: 500px;
+    margin-top: 30px;
+}

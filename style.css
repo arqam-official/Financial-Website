@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(background-image.jpg);
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+#nav-bar{
+    height: 55px;
+background-color: black;
+display: flex;
+align-items: center;
+
+}
+
+
+#nav-links{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#logo{
+    height: 40px;
+    width: 110px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+#nav-links a{
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+#login{
+    margin-left: 500px;
+}
+
+#main-text{
+    display: flex;
+    margin-top: 200px;
+    font-size: 45px;
+    margin-left: 20px;
+}
+
+#main-text-para{
+    margin-left: 20px;
+}
+
+#get-start{
+    display: none;
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 120px;
+    border-radius: 30%;
+    background-color: #3331b5;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+#button:hover{
+    background-color: #0400fa;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
